@@ -1,0 +1,8 @@
+stepsDefinitions\GoogleDefinitions.class
+pageObjects\CommonsPage.class
+RunCucumberTest.class
+configuration\Iproperties.class
+stepsDefinitions\CommonsDefinitions.class
+pageMethods\CommonsMethods.class
+pageObjects\GooglePage.class
+pageMethods\GoogleMethods.class

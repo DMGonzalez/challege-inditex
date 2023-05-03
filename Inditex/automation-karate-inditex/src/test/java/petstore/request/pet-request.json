@@ -1,0 +1,6 @@
+{
+  "base_url": "https://petstore.swagger.io/v2/pet/findByStatus?status=",
+  "headers": {
+    "accept": "application/json"
+  }
+}

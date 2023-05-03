@@ -1,0 +1,17 @@
+{
+  "name": "automation-cypress-inditex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-prod": "npx cypress run --headed --browser chrome --env environment=prod --spec cypress/e2e/google/"
+  },
+  "author": "Diego Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.10.0",
+    "cypress-mochawesome-reporter": "^3.4.0",
+    "cypress-xpath": "^2.0.1",
+    "dotenv": "^16.0.3"
+  }
+}

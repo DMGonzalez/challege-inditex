@@ -1,0 +1,25 @@
+{
+  "base_url": "https://petstore.swagger.io",
+  "path": "/v2/user/",
+  "post": {
+    "headers": {
+      "accept": "application/json",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "id": 0,
+      "username": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string",
+      "password": "string",
+      "phone": "string",
+      "userStatus": 0
+    }
+  },
+  "get": {
+    "headers": {
+      "accept": "application/json"
+    }
+  }
+}

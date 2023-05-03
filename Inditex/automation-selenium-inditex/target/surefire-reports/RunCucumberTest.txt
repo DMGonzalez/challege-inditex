@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.151 sec <<< FAILURE!
+Búsqueda en Google - Validación de resultado(Google test)  Time elapsed: 1.483 sec  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'DESKTOP-T744P2E', ip: '192.168.0.28'
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:101)
+	at pageMethods.CommonsMethods.goToBaseUrlFirefox(CommonsMethods.java:62)
+	at pageMethods.CommonsMethods.goToBaseUrl(CommonsMethods.java:74)
+	at stepsDefinitions.CommonsDefinitions.goToGooglePage(CommonsDefinitions.java:9)
+	at ?.Que el usuario accede a Google(file:///C:/Users/Usuario/Desktop/otros/automation-selenium-inditex/src/test/resources/features/googleSearch.feature:9)
+

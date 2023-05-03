@@ -1,0 +1,40 @@
+## Comando de ejecución con reportes (Chrome) en Windows
+
+```
+  mvn clean test -Denv=prod -Dbrowser=chrome -Dos=windows -Dcucumber.filter.tags="@run" & allure serve allure-results
+```
+
+## Comando de ejecución con reportes (Chrome) en Linux
+
+```
+  mvn clean test -Denv=prod -Dbrowser=chrome -Dos=linux -Dcucumber.filter.tags="@tuTag" & allure serve allure-results
+```
+
+## Comando de ejecución con reportes (Firefox)
+
+```
+  mvn clean test -Denv=prod -Dbrowser=firefox -Dos=windows -Dcucumber.filter.tags="@run" & allure serve allure-results
+
+## Comando de ejecución sin reportes (Chrome)
+
+```
+  mvn clean test -Denv=prod -Dbrowser=chrome -Dos=windows -Dcucumber.filter.tags="@run"
+```
+
+## Comando de ejecución sin reportes (Firefox)
+
+```
+  mvn clean test -Denv=prod -Dbrowser=firefox -Dos=windows -Dcucumber.filter.tags="@run"
+```
+
+## Comando de ejecución para un test en particular (Chrome)
+
+```
+  mvn clean test -Denv=prod -Dbrowser=chrome -Dos=windows -Dcucumber.filter.tags="@tuTag"
+```
+
+## Comando de ejecución para un test en particular (Firefox)
+
+```
+  mvn clean test -Denv=prod -Dbrowser=firefox -Dos=windows -Dcucumber.filter.tags="@tuTag"
+```
